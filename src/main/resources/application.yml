@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: dev-week-2024
+  datasource:
+    url: jdbc:h2:mem:sdw2024
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ''
+  h2:
+    console:
+      enabled: true
+
