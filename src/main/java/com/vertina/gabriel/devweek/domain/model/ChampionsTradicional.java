@@ -1,21 +1,16 @@
-package me.dio.sdw2024.domain.model;
+//package me.dio.sdw2024.domain.model;
 
-public class ChampionsTradicional {
+/*public class ChampionsTradicional {
 private long id;
     private String name;
     private String role;
     private String lore;
     private String imageUrl;
 
-    public ChampionsTradicional(long id, String name, String role, String lore, String imageUrl) {
-        this.id = id;
-        this.name = name;
-        this.role = role;
-        this.lore = lore;
-        this.imageUrl = imageUrl;
-    }
+
 
     public long getId() {
+
         return id;
     }
 
@@ -55,3 +50,4 @@ private long id;
         this.imageUrl = imageUrl;
     }
 }
+*/

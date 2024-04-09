@@ -1,18 +1,20 @@
-package me.dio.sdw2024.domain.model;
+package com.vertina.gabriel.devweek.domain.model;
 
-public record Champions(
+public record Champion(
 Long id,
     String name,
     String role,
     String lore,
     String imageUrl
             ) {
-public String generateContextByQuestion(String question){
+
+
+public String generateContextByQuestion(String question) {
     return """
             Pergunta:%s
             Nome do campeão:%s
             Função :%s
             Lore(História):%s
-            """.formatted(question,this.name,this.role,this.lore);
+            """.formatted(question, this.name, this.role, this.lore);
 }
 }

@@ -1,4 +1,4 @@
-package me.dio.sdw2024.domain.exception;
+package com.vertina.gabriel.devweek.domain.exception;
 
 public class ChampionNotFoundException extends RuntimeException{
 

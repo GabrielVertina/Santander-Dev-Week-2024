@@ -1,6 +1,6 @@
-package me.dio.sdw2024.adpters.exception;
+package com.vertina.gabriel.devweek.adpters.in.exception;
 
-import me.dio.sdw2024.domain.exception.ChampionNotFoundException;
+import com.vertina.gabriel.devweek.domain.exception.ChampionNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
@@ -21,17 +21,14 @@ public class GlobalExceptionHandler {
 
     }
     @ExceptionHandler(Exception.class)
-    public ResponseEntity<ApiError> handlerDomainException(Exception unexpepctedError) {
+    public ResponseEntity<ApiError> handlerDomainException(Exception unexpectedError) {
        String message = "Ops ocorreu um erro inesperado";
-    logger.error(message,unexpepctedError);
+    logger.error(message,unexpectedError);
         return ResponseEntity
                 .internalServerError()
                 .body(new ApiError(message));
     }
-   public record ApiError(String message){
-
-
-   }
+   public record ApiError(String message){ }
 
 
     }
